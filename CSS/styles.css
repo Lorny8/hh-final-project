@@ -1,0 +1,583 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.box-content {
+  position: relative;
+  background-color: whitesmoke;
+  text-align: center;
+  width: 600px;
+  padding: 30px;
+  border: solid 5px #e0ebe5;
+  top: 30px;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hide-modal {
+  display: none;
+}
+
+
+.form-container-modal{
+  width: 100%; 
+}
+
+form {
+  padding: 20px;
+  align-items: center;
+}
+
+  input[type="email-modal"] {
+    padding: 5px;
+    margin: 10 10px;
+    border-radius: 5px;
+    width: 80%;
+  }
+  
+  input[type="text-modal"] {
+    padding: 5px;
+    margin: 10px 10px;
+    border-radius: 5px;
+  }
+  
+  input[type="submit-modal"] {
+    padding: 5px;
+    margin: 10px 10px;
+    background-color: #a9a9a9;
+    border-radius: 5px;
+    border: none; 
+    text-align: center;   
+  }
+  
+  legend-modal {
+    display: flex;
+    color: black;
+    font-weight: bold;
+  } 
+
+
+
+
+ .top-nav  {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 05px;   
+} 
+
+
+.logo {
+    width: 200px; 
+    height: auto;
+    margin: 5px;
+}
+
+.nav-right {
+    padding:  10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.container {
+   display: inline-block;
+   cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    height: 5px;
+    width: 35px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+.change .bar1{
+    -webkit-transform: rotate (-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu {
+    background-color: #f2f1f181;
+    color: white;
+    width: 30%;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    padding: 45px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    position: absolute;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(100%);
+    z-index: 10;
+}
+
+.menu-open {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .menu a, .menu a:focus, .menu a:visited {
+    color: black;
+    display: block;
+    font-size: 20px;
+    margin: 25px auto;
+    text-align: right;
+    text-decoration: none; 
+  }
+  .menu-close {
+    background-color: white;
+    color: darkred;
+  }
+
+  .landing-page {
+     background-repeat: repeat-x;
+     width: 100%;
+     background-size: cover;
+     filter: saturate(20%);
+     height: 800px;
+     position: relative;
+  }
+
+.carousel-item {
+    height: 800px;
+}  
+
+ .carousel-item img {
+  position: absolute;
+  object-fit:cover;
+  top: 0;
+  left: 0;
+  min-height: 800px;
+} 
+
+  .landing-page-text {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2px;
+      color: black;
+      font-size: 15px;
+      background-color: #dbdada;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  .happy-health-box {
+    display: flex; 
+    position: relative;
+    width: 100%;
+    background-color: #f2f1f181;
+  }
+
+  .title-box {
+    text-align: center;
+    font-size: 45px;
+    margin: auto;
+    background-color: #e0ebe5;
+    padding: 50px;
+  }
+
+  .leftbox {
+     width: 60%;
+  } 
+
+  .health-box-styles {
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .yogabox {
+    background-image: url(../img/yoga.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 50%; 
+    margin: 10px;
+    border-radius: 5px;
+    filter: grayscale(40%)
+  }
+
+  .yogatext {
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .pilatesbox {
+    background-image: url(../img/weights-pilates.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 50%; 
+    margin: 10px;
+    border-radius: 5px;
+    filter: grayscale(40%)
+  }
+
+  .pilatestext {
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .y-m-box {
+    display: flex;
+    width: 100%;
+  }
+
+  .nutritionbox {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../img/healthyfood.jpg);
+    background-size: cover;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    filter: grayscale(40%)
+  }
+
+  .nutritiontext {
+    color: white;
+    font-size: 35px; 
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 35px; 
+    letter-spacing: 5px;
+  }
+
+  .meditatebox {
+    background-image: url(../img/meditate.jpg);
+    background-size: cover;
+    height: 520px;
+    width: 40%;
+    margin: 10px;
+    border-radius: 5px;
+    filter: grayscale(40%)
+  }
+
+  .meditatetext {
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 35px;
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 45px;
+    background-color: #e0ebe5;
+    padding: 50px;
+    margin: 0;
+  }
+
+  .profile-page {
+    background-color: #f2f1f181; 
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .teacher-tile {
+    width: 15%;
+    margin: 10px;
+  }
+
+  .profile-image {
+    background-size: cover;
+    height: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+  }
+
+  .profile-text {
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+  }
+
+
+  #Allyprofile1 {
+    background-image: url(../img/Ally.jpg);
+  }
+
+  #ilonaprofile2 {
+    background-image: url(../img/ilona.jpg);
+  }
+
+  #jeremyprofile3 {
+    background-image: url(../img/jeremy.jpg);
+  }
+
+  #leoniprofile4 {
+    background-image: url(../img/leoni.jpg);
+  }
+  #lauraprofile5 {
+    background-image: url(../img/laura.jpg);
+  }
+  #andrewprofile6 {
+    background-image: url(../img/andrew.jpg);
+  }
+ 
+  .bottompage {
+      display: flex;
+      width: 100%;
+      background-color: #e0ebe5;
+  }
+
+  .bottompage div {
+    padding: 20px;
+  }
+
+  .bottompageinfo {
+    padding-left: 0px; 
+  }
+
+ .bottompagelinks {
+   width: 50%;
+   display: flex;
+ }
+
+.form-container {
+  width: 50%; 
+  margin: 0 50px;
+
+}
+  input[type="email"] {
+    display: block;
+    padding: 5px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    width: 60%;
+  }
+  
+  form {
+    padding: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    margin: 10px 10px;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    padding: 5px;
+    margin: 10px 10px;
+    background-color: #a9a9a9;
+    border-radius: 5px;
+    border: none;    
+  }
+  
+
+
+  legend {
+    color: black;
+    font-weight: bold;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:hover, a:focus, a:active {
+    color: #A9A9A9
+  }
+
+  .footernav {
+      padding: 5px; 
+      text-align: left; 
+      background-color: #a9a9a9;
+      color: black; 
+  }
+
+
+
+
+
+   @media  (max-width: 480px) {
+
+
+    .landing-page-text {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .title-box {
+      font-size: 20px;
+    }
+
+    .happy-health-box {
+      flex-direction: column; 
+    }
+
+    .leftbox {
+      width: 100%;
+    } 
+
+    .y-m-box  {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .nutritionbox {
+      align-items: center;
+    }
+
+    .nutritiontext {
+      margin-left: 250px;
+    }
+
+    .yogabox, .pilatesbox, .meditatebox,  .nutritionbox{
+      width: 100%;
+    }
+
+    .row {
+      flex-direction: column;
+    }
+
+    .teacher-tile {
+      width: 100%;
+    }
+
+    .bottompage {
+      flex-direction: column;
+    }
+
+    .profile-image {
+      height: 300px;
+    }
+
+    .form-container {
+      margin-left: 5px;
+      padding-left: 20px;
+    }
+     
+  }
+ 
+  @media  (max-width: 768px) {
+    .landing-page-text {
+      flex-direction: column;
+      text-align: center;
+      margin: 3px;
+    }
+
+    .title-box {
+      font-size: 30px;
+      padding: 20px;
+      margin: 3px;
+    }
+
+    .happy-health-box {
+      flex-direction: column; 
+    }
+
+    .leftbox {
+      width: 100%;
+    } 
+
+    .y-m-box  {
+      flex-direction: column;
+    }
+
+    .nutritionbox {
+      align-items: center;
+    }
+
+
+    .yogabox, .pilatesbox, .meditatebox,  .nutritionbox{
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 30px;
+      padding: 20px;
+    }
+
+    .row {
+      flex-direction: column;
+    }
+
+    .teacher-tile {
+      width: 100%;
+      margin: 0px; 
+      /* background-size: 10px; */
+    }
+
+    .bottompage {
+      flex-direction: column;
+    }
+
+    .profile-image {
+      height: 900px;
+    }
+
+    h3 {
+      font-size: 23px;
+      margin: 3px;
+    }
+
+    .login {
+      font-size: 11px;
+    }
+
+    .form-container {
+      margin-left: 5px;
+      padding-left: 20px;
+    }
+  
+  }
+
+
+
+
