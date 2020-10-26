@@ -46,20 +46,20 @@ form {
   align-items: center;
 }
 
-  input[type="email-modal"] {
+  .email-modal  {
     padding: 5px;
     margin: 10 10px;
     border-radius: 5px;
     width: 80%;
   }
   
-  input[type="text-modal"] {
+  .text-modal{
     padding: 5px;
     margin: 10px 10px;
     border-radius: 5px;
   }
   
-  input[type="submit-modal"] {
+  .submit-modal {
     padding: 5px;
     margin: 10px 10px;
     background-color: #a9a9a9;
@@ -73,8 +73,6 @@ form {
     color: black;
     font-weight: bold;
   } 
-
-
 
 
  .top-nav  {
@@ -360,13 +358,13 @@ form {
   }
 
   #leoniprofile4 {
-    background-image: url(../img/leoni.jpg);
+    background-image: url(../img/Leoni.jpg);
   }
   #lauraprofile5 {
-    background-image: url(../img/laura.jpg);
+    background-image: url(../img/Laura.jpg);
   }
   #andrewprofile6 {
-    background-image: url(../img/andrew.jpg);
+    background-image: url(../img/Andrew.jpg);
   }
  
   .bottompage {
@@ -393,7 +391,7 @@ form {
   margin: 0 50px;
 
 }
-  input[type="email"] {
+  .newsletter-email {
     display: block;
     padding: 5px;
     margin: 10px 10px;
@@ -405,13 +403,13 @@ form {
     padding: 20px;
   }
   
-  input[type="text"] {
+  .newsletter-text {
     padding: 5px;
     margin: 10px 10px;
     border-radius: 5px;
   }
   
-  input[type="submit"] {
+  .newsletter-submit {
     padding: 5px;
     margin: 10px 10px;
     background-color: #a9a9a9;
@@ -419,8 +417,6 @@ form {
     border: none;    
   }
   
-
-
   legend {
     color: black;
     font-weight: bold;
