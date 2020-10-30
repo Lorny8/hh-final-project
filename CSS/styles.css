@@ -1,12 +1,16 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
-}
+} 
+
+
+
 
 .box-content {
   position: relative;
   background-color: whitesmoke;
   text-align: center;
-  width: 600px;
+  /* width: 600px; */
+  width: 50%;
   padding: 30px;
   border: solid 5px #e0ebe5;
   top: 30px;
@@ -137,7 +141,7 @@ form {
     padding: 45px;
     padding-top: 80px;
     padding-bottom: 10px;
-    position: absolute;
+    position: fixed;
     transition: all 0.35s ease-in-out;
     transform: translateX(100%);
     z-index: 10;
@@ -439,6 +443,16 @@ form {
 
    @media  (max-width: 480px) {
 
+    /* .logo {
+      width: 50px; 
+      height: auto;
+      margin: 2px;
+  } */
+
+    .box-content {
+      width: 100%
+    }
+
     .landing-page-text {
       flex-direction: column;
       text-align: center;
@@ -509,6 +523,16 @@ form {
      
   
   @media  (max-width: 768px) {
+
+    .logo {
+      width: 150px; 
+      height: 50px;
+      margin: 2px;
+  }
+
+    .box-content {
+      width: 100%
+    }
     .landing-page-text {
       flex-direction: column;
       text-align: center;
