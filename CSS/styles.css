@@ -158,7 +158,6 @@ form {
   }
   .menu-close {
     background-color: white;
-    color: darkred;
   }
 
   .landing-page {
@@ -375,7 +374,7 @@ form {
 
   .bottompage div {
     padding: 20px;
-  }
+  } 
 
   .bottompageinfo {
     padding-left: 0px; 
@@ -438,11 +437,7 @@ form {
   }
 
 
-
-
-
    @media  (max-width: 480px) {
-
 
     .landing-page-text {
       flex-direction: column;
@@ -476,31 +471,43 @@ form {
 
     .yogabox, .pilatesbox, .meditatebox,  .nutritionbox{
       width: 100%;
+      margin: 2px 2px;
+      
     }
 
     .row {
+      display: none;
+    }
+
+    .bottompagelinks {
       flex-direction: column;
-    }
-
-    .teacher-tile {
-      width: 100%;
-    }
-
-    .bottompage {
-      flex-direction: column;
-    }
-
-    .profile-image {
-      height: 300px;
+      text-align: left;
+      padding-bottom: 2px;
     }
 
     .form-container {
-      margin-left: 5px;
-      padding-left: 20px;
+      text-align: left;
+      padding-top: 2px;
     }
-     
+
+    .newsletter-text {
+      margin: 5px;
+    }
+
+    .newsletter-email {
+      position: absolute;
+      width: 60%;
+      margin: 5px;
+    }
+
+    .newsletter-submit {
+      margin: 5px;
+    }
+
   }
- 
+
+     
+  
   @media  (max-width: 768px) {
     .landing-page-text {
       flex-direction: column;
@@ -533,35 +540,26 @@ form {
 
     .yogabox, .pilatesbox, .meditatebox,  .nutritionbox{
       width: 100%;
+      margin: 2px 2px;
     }
 
     h1 {
-      font-size: 30px;
-      padding: 20px;
+      display: none;
     }
 
     .row {
-      flex-direction: column;
-    }
-
-    .teacher-tile {
-      width: 100%;
-      margin: 0px; 
-      /* background-size: 10px; */
+      display: none;
     }
 
     .bottompage {
       flex-direction: column;
+      text-align: left;
     }
 
-    .profile-image {
-      height: 900px;
+    .bottompagelinks {
+      flex-direction: column;
     }
 
-    h3 {
-      font-size: 23px;
-      margin: 3px;
-    }
 
     .login {
       font-size: 11px;
